@@ -3,6 +3,49 @@
     padding: 0;
 }
 
+@keyframes sol {
+    0% {
+        background-color: #FFA500;
+    }
+
+    50% {
+        background-color: #D3D3D3;
+    }
+
+    100% {
+        background-color: #FFA500;
+    }
+}
+
+@keyframes anoitecer {
+    0% {
+        background-color: #00BFFF;
+    }
+
+    50% {
+        background-color: #1C1C1C;
+    }
+
+    100% {
+        background-color: #00BFFF;
+    }
+}
+
+@keyframes lua {
+    0% {
+        background-color: #00BFFF;
+    }
+
+    50% {
+        background-color: #1C1C1C;
+    }
+
+    100% {
+        background-color: #00BFFF;
+    }
+}
+
+
 @keyframes tf {
     0% {
         margin-left: 0%;
@@ -34,14 +77,12 @@
         width: 1vw;
         height: 16vw;
         border-top-right-radius: 0vw;
-        transform: translateY(0vw);
     }
 
     43% {
         width: 1vw;
         height: 16vw;
         border-top-right-radius: 0vw;
-        transform: translateY(0vw);
     }
 
 
@@ -331,15 +372,15 @@
     }
 
     33% {
-        width: 1vw;
-        height: 1vw;
+        width: 0vw;
+        height: 0vw;
         margin-left: 0vw;
         border: 0vw;
     }
 
     43% {
-        width: 1vw;
-        height: 1vw;
+        width: 0vw;
+        height: vw;
         margin-left: 0vw;
         border: 0vw;
     }
@@ -374,7 +415,10 @@
 }
 
 body {
-    background-image: linear-gradient(to top right, #00BFFF, #87CEEB, #87CEFA);
+    background-color: #00BFFF;
+    animation-name: anoitecer;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
 }
 
 div {
@@ -495,5 +539,6 @@ footer {
     margin-left: 1%;
     float: left;
     transform: translateY(5vh);
-    background-image: linear-gradient(to top right, #FF4500, #FF8C00, #FFA500);
+    background-color: #FFA500;
+    animation-name: sol;
 }
